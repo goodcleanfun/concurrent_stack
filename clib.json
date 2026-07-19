@@ -1,0 +1,19 @@
+{
+    "name": "concurrent_stack",
+    "version": "0.0.0",
+    "repo": "goodcleanfun/concurrent_stack",
+    "description": "Generic lock-free stack using a singly linked list with a memory pool for nodes using C11 atomics/compare-and-swap.",
+    "keywords": ["stack", "linked list", "memory pool", "thread safe", "atomic"],
+    "license": "MIT",
+    "development": {
+      "silentbicycle/greatest": "*"
+    },
+    "dependencies": {
+      "goodcleanfun/concurrent_memory_pool": "*",
+      "goodcleanfun/threading": "*"
+    },
+    "src": [
+      "src/concurrent_stack.h"
+    ]
+    
+  }
