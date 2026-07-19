@@ -75,6 +75,8 @@ jobs:
           curl -L https://raw.githubusercontent.com/goodcleanfun/aligned/refs/heads/main/src/aligned.h -o deps\aligned\aligned.h
           mkdir -p deps\bit_utils
           curl -L https://raw.githubusercontent.com/goodcleanfun/bit_utils/refs/heads/main/src/bit_utils.h -o deps\bit_utils\bit_utils.h
+          mkdir -p deps\spinlock
+          curl -L https://raw.githubusercontent.com/goodcleanfun/spinlock/refs/heads/main/src/spinlock.h -o deps\spinlock\spinlock.h
           mkdir -p deps\concurrent_memory_pool
           curl -L https://raw.githubusercontent.com/goodcleanfun/concurrent_memory_pool/refs/heads/main/src/concurrent_memory_pool.h -o deps\concurrent_memory_pool\concurrent_memory_pool.h
       - name: Run test with MSVC
@@ -103,6 +105,8 @@ jobs:
           curl -L https://raw.githubusercontent.com/goodcleanfun/aligned/refs/heads/main/src/aligned.h -o deps/aligned/aligned.h
           mkdir -p deps/bit_utils
           curl -L https://raw.githubusercontent.com/goodcleanfun/bit_utils/refs/heads/main/src/bit_utils.h -o deps/bit_utils/bit_utils.h
+          mkdir -p deps/spinlock
+          curl -L https://raw.githubusercontent.com/goodcleanfun/spinlock/refs/heads/main/src/spinlock.h -o deps/spinlock/spinlock.h
           mkdir -p deps/concurrent_memory_pool
           curl -L https://raw.githubusercontent.com/goodcleanfun/concurrent_memory_pool/refs/heads/main/src/concurrent_memory_pool.h -o deps/concurrent_memory_pool/concurrent_memory_pool.h
       - name: Build and Test with MinGW
